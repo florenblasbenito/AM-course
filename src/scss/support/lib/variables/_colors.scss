@@ -1,0 +1,85 @@
+@import "_color-system";
+
+// -------- Color theming variables --------
+
+// Use this variables when needed to add a background-color,
+// color or border color to any element. Never use hexadecimals.
+
+/* --------------How to use ---------------- */
+//    background-color: $primary-base50;
+//    color: $text-base;
+//    border-color: $family-1-base;
+/* ---------------------------------------- */
+
+$primary-base: $purple-100;
+$primary-base75: $purple-75;
+$primary-base50: $purple-50;
+$primary-base25: $purple-25;
+
+//Neutral
+$neutral-base: $gray-100;
+$neutral-base90: $gray-90;
+$neutral-base80: $gray-80;
+$neutral-base70: $gray-70;
+$neutral-base60: $gray-60;
+$neutral-base50: $gray-50;
+$neutral-base40: $gray-40;
+$neutral-base30: $gray-30;
+$neutral-base20: $gray-20;
+$neutral-base10: $gray-10;
+
+$text-base: $indigo-100;
+$text-base75: $indigo-75;
+$text-base50: $indigo-50;
+$text-base25: $indigo-25;
+
+$family-1-base: $mustard-100;
+$family-1-base75: $mustard-75;
+$family-1-base50: $mustard-50;
+$family-1-base25: $mustard-25;
+
+$family-2-base: $flamingo-100;
+$family-2-base75: $flamingo-75;
+$family-2-base50: $flamingo-50;
+$family-2-base25: $flamingo-25;
+
+$family-3-base: $aquamarine-100;
+$family-3-base75: $aquamarine-75;
+$family-3-base50: $aquamarine-50;
+$family-3-base25: $aquamarine-25;
+
+$family-4-base: $grass-100;
+$family-4-base75: $grass-75;
+$family-4-base50: $grass-50;
+$family-4-base25: $grass-25;
+
+//Global
+$global-base: $orange;
+$global-dark: $black;
+$global-light: $white;
+$global-transparent: $transparent;
+
+// Support colors
+$support-success-base: $green-100;
+$support-success-base75: $green-75;
+$support-success-base50: $green-50;
+$support-success-base25: $green-25;
+$support-success-base-text: $green-0;
+
+$support-error-base: $red-100;
+$support-error-base75: $red-75;
+$support-error-base50: $red-50;
+$support-error-base25: $red-25;
+$support-error-base-text: $red-0;
+
+$support-warning-base: $yellow-100;
+$support-warning-base75: $yellow-75;
+$support-warning-base50: $yellow-50;
+$support-warning-base25: $yellow-25;
+$support-warning-base-text: $yellow-0;
+
+$support-info-base: $blue-100;
+$support-info-base75: $blue-75;
+$support-info-base50: $blue-50;
+$support-info-base25: $blue-25;
+$support-info-base-text: $blue-0;

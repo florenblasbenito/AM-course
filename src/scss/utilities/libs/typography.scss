@@ -1,0 +1,67 @@
+h1,
+.heading-1 {
+  @include font-size($h1-font-size);
+  font-weight: $fw-300;
+}
+
+h2,
+.heading-2 {
+  @include font-size($h2-font-size);
+}
+
+h3,
+.heading-3 {
+  @include font-size($h3-font-size);
+}
+
+h4,
+.heading-4 {
+  @include font-size($h4-font-size);
+  font-weight: $fw-300;
+
+}
+
+.body-base {
+  @include font-size($body-font-size-base);
+}
+
+.body-small {
+  @include font-size($body-font-size-small);
+}
+
+.caption {
+  @include font-size($caption-font-size);
+}
+
+.subtitle {
+  @include font-size($subtitle-font-size);
+}
+
+// Text weights
+.bold { font-weight: $fw-700; }
+.regular { font-weight: $fw-400;}
+.light { font-weight: $fw-300; }
+.italic { font-style: italic;   }
+
+
+// Text alignments
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+
+//Lists
+.list {
+  li {
+    margin-bottom: $spacer-3;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &--bullet {
+    @extend .list;
+    padding-left: $spacer-5;
+    list-style-type: disc;
+  }
+}

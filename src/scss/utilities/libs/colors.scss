@@ -1,0 +1,113 @@
+// -------- Color utilities --------
+
+// stylelint-disable
+
+//Background colors
+.bg-primary-base   { background-color: $primary-base; }
+.bg-primary-base75 { background-color: $primary-base75; }
+.bg-primary-base50 { background-color: $primary-base50; }
+.bg-primary-base25 { background-color: $primary-base25; }
+
+.bg-neutral-base     { background-color: $neutral-base; }
+.bg-neutral-base90   { background-color: $neutral-base90; }
+.bg-neutral-base80   { background-color: $neutral-base80; }
+.bg-neutral-base70   { background-color: $neutral-base70; }
+.bg-neutral-base60   { background-color: $neutral-base60; }
+.bg-neutral-base50   { background-color: $neutral-base50; }
+.bg-neutral-base40   { background-color: $neutral-base40; }
+.bg-neutral-base30   { background-color: $neutral-base30; }
+.bg-neutral-base20   { background-color: $neutral-base20; }
+.bg-neutral-base10   { background-color: $neutral-base10; }
+
+.bg-family-1-base   { background-color: $family-1-base; }
+.bg-family-1-base75 { background-color: $family-1-base75; }
+.bg-family-1-base50 { background-color: $family-1-base50; }
+.bg-family-1-base25 { background-color: $family-1-base25; }
+
+.bg-family-2-base   { background-color: $family-2-base; }
+.bg-family-2-base75 { background-color: $family-2-base75; }
+.bg-family-2-base50 { background-color: $family-2-base50; }
+.bg-family-2-base25 { background-color: $family-2-base25; }
+
+.bg-family-3-base   { background-color: $family-3-base; }
+.bg-family-3-base75 { background-color: $family-3-base75; }
+.bg-family-3-base50 { background-color: $family-3-base50; }
+.bg-family-3-base25 { background-color: $family-3-base25; }
+
+.bg-family-4-base   { background-color: $family-4-base; }
+.bg-family-4-base75 { background-color: $family-4-base75; }
+.bg-family-4-base50 { background-color: $family-4-base50; }
+.bg-family-4-base25 { background-color: $family-4-base25; }
+
+.bg-global-base  { background-color: $global-base; }
+.bg-global-light { background-color: $global-light; }
+.bg-global-dark  { background-color: $global-dark; }
+.bg-global-transparent { background-color: $global-transparent; }
+
+.bg-support-error-base   { background-color: $support-error-base; }
+.bg-support-error-base75 { background-color: $support-error-base75; }
+.bg-support-error-base50 { background-color: $support-error-base50; }
+.bg-support-error-base25 { background-color: $support-error-base25; }
+
+.bg-support-warning-base   { background-color: $support-warning-base; }
+.bg-support-warning-base75 { background-color: $support-warning-base75; }
+.bg-support-warning-base50 { background-color: $support-warning-base50; }
+.bg-support-warning-base25 { background-color: $support-warning-base25; }
+
+.bg-support-success-base   { background-color: $support-success-base; }
+.bg-support-success-base75 { background-color: $support-success-base75; }
+.bg-support-success-base50 { background-color: $support-success-base50; }
+.bg-support-success-base25 { background-color: $support-success-base25; }
+
+.bg-support-info-base   { background-color: $support-info-base; }
+.bg-support-info-base75 { background-color: $support-info-base75; }
+.bg-support-info-base50 { background-color: $support-info-base50; }
+.bg-support-info-base25 { background-color: $support-info-base25; }
+
+//TODO: remove this bg color
+.bg-text-base { background-color: $text-base; }
+
+//Text colors
+.clr-primary-base   { color: $primary-base; fill: $primary-base; }
+.clr-primary-base75 { color: $primary-base75; fill: $primary-base75; }
+.clr-primary-base50 { color: $primary-base50; fill: $primary-base50; }
+.clr-primary-base25 { color: $primary-base25; fill: $primary-base25; }
+
+.clr-text-base   { color: $text-base; fill: $text-base; }
+.clr-text-base75 { color: $text-base75; fill: $text-base75; }
+.clr-text-base50 { color: $text-base50; fill: $text-base50; }
+.clr-text-base25 { color: $text-base25; fill: $text-base25; }
+
+.clr-family-1-base   { color: $family-1-base; fill: $family-1-base; }
+.clr-family-1-base75 { color: $family-1-base75; fill: $family-1-base75; }
+.clr-family-1-base50 { color: $family-1-base50; fill: $family-1-base50; }
+.clr-family-1-base25 { color: $family-1-base25; fill: $family-1-base25; }
+
+.clr-family-2-base   { color: $family-2-base; fill: $family-2-base; }
+.clr-family-2-base75 { color: $family-2-base75; fill: $family-2-base75; }
+.clr-family-2-base50 { color: $family-2-base50; fill: $family-2-base50; }
+.clr-family-2-base25 { color: $family-2-base25; fill: $family-2-base25; }
+
+.clr-family-3-base   { color: $family-3-base; fill: $family-3-base; }
+.clr-family-3-base75 { color: $family-3-base75; fill: $family-3-base75; }
+.clr-family-3-base50 { color: $family-3-base50; fill: $family-3-base50; }
+.clr-family-3-base25 { color: $family-3-base25; fill: $family-3-base25; }
+
+.clr-family-4-base   { color: $family-4-base; fill: $family-4-base; }
+.clr-family-4-base75 { color: $family-4-base75; fill: $family-4-base75; }
+.clr-family-4-base50 { color: $family-4-base50; fill: $family-4-base50; }
+.clr-family-4-base25 { color: $family-4-base25; fill: $family-4-base25; }
+
+.clr-global-base  { color: $global-base; fill: $global-base; }
+.clr-global-dark  { color: $global-dark; fill: $global-dark; }
+.clr-global-light { color: $global-light; fill: $global-light; }
+
+.clr-support-error     { color: $support-error-base-text; fill: $support-error-base-text; }
+.clr-support-info      { color: $support-info-base-text; fill: $support-info-base-text; }
+.clr-support-success   { color: $support-success-base-text; fill: $support-success-base-text; }
+.clr-support-warning   { color: $support-warning-base-text; fill: $support-warning-base-text; }
+
+.clr-support-error-base { color: $support-error-base; fill: $support-error-base; }
+.clr-support-info-base { color: $support-info-base; fill: $support-info-base; }
+.clr-support-success-base { color: $support-success-base; fill: $support-success-base; }
+.clr-support-warning-base   { color: $support-warning-base; fill: $support-warning-base; }

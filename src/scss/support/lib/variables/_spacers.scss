@@ -1,0 +1,33 @@
+// These are our margin and padding utility spacers. The default step size we
+// use is 8px. This gives us a key of:
+//    0 => 0
+//    1 => .4rem 
+//    2 => .8rem
+//    3 => 1.6rem
+//    4 => 2.4rem
+//    5 => 3.2rem
+//    6 => 4rem
+$spacer: 8px !default;
+$spacers: (
+  0,
+  $spacer / 2,
+  $spacer,
+  $spacer * 2,
+  $spacer * 3,
+  $spacer * 4,
+  $spacer * 5,
+  $spacer * 6,
+  $spacer * 8,
+  $spacer * 10
+
+) !default;
+
+// Aliases for easy use
+$spacer-1: nth($spacers, 2) !default; // .4rem
+$spacer-2: nth($spacers, 3) !default; // .8rem
+$spacer-3: nth($spacers, 4) !default; // 1.6rem
+$spacer-4: nth($spacers, 5) !default; // 2.4rem
+$spacer-5: nth($spacers, 6) !default; // 3.2rem
+$spacer-6: nth($spacers, 7) !default; // 4rem
+$spacer-7: nth($spacers, 8) !default; // 64px
+$spacer-8: nth($spacers, 9) !default; // 80px
