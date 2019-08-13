@@ -1,0 +1,37 @@
+@import "_colors";
+
+.wrapper-item {
+    display: flex;
+}
+
+//buttom mixin
+@mixin btn ($size, $line-height) {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 1rem;
+    color: $text__color;
+}
+
+//include btn class & btn bacgrounds colors
+.btn__primary {
+    @include btn (1rem, 1.5);
+    background-color:  $primary__color;  
+  }
+
+  .btn__success {
+    @include btn (1rem, 1.5);
+    background-color:  $success__color;
+  }
+  .btn__error {
+    @include btn (1rem, 1.5);
+    background-color:  $error__color;
+  }
+  .btn__warning  {
+    @include btn (1rem, 1.5);
+    background-color:  $warning__color;
+  }
+  .btn__info  {
+    @include btn (1rem, 1.5);
+    background-color:  $info__color;
+  }
