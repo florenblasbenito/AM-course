@@ -7,3 +7,5 @@
 3. Execute gulp 
 
 4. Execute gulp watch
+
+5.- Jessica rules
