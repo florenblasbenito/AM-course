@@ -1,4 +1,5 @@
 @import "_colors";
+@import "_spacers";
 
 .wrapper-item {
     display: flex;
@@ -6,10 +7,13 @@
 
 //buttom mixin
 @mixin btn ($size, $line-height) {
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding-left:$spacer3;
+    padding-right:$spacer3;
+    padding-top: $spacer2;
+    padding-bottom: $spacer2;   
     border-radius: 2rem;
     text-align: center;
-    margin: 1rem;
+    margin: $spacer2;
     color: $text__color;
 }
 
