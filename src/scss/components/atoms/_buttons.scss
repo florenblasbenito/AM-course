@@ -7,10 +7,7 @@
 
 //buttom mixin
 @mixin btn ($size, $line-height) {
-    padding-left:$spacer3;
-    padding-right:$spacer3;
-    padding-top: $spacer2;
-    padding-bottom: $spacer2;   
+    padding:$spacer2 $spacer3 $spacer2 $spacer3;   
     border-radius: 2rem;
     text-align: center;
     margin: $spacer2;
