@@ -1,0 +1,67 @@
+.wrapper-item {
+    display: flex;
+}
+
+//button primary
+%btn--primary {
+  padding:$spacer-2*1.5 $spacer-5;   
+  border-radius: .3rem;
+  text-align: center;
+  margin: $spacer-2;
+  color: $global-light;
+  font-weight: 600;
+}
+
+
+
+//include btn class & btn bacgrounds colors
+.btn--primary {
+    @extend %btn--primary;
+    background-color:  $primary-base;
+    cursor: pointer;
+      &:hover {
+        background-color: $primary-base50;
+      }
+      &:focus {
+        background-color: $primary-base75;
+      }
+      &:active {
+        background-color: $primary-base125;
+      }
+      & .disabled {
+        background-color: $neutral-base;
+        cursor: none;
+      }
+  }
+
+//button secondary
+  %btn--secondary {
+    padding:$spacer-2*1.5 $spacer-5;  
+    border-radius: .3rem;
+    text-align: center;
+    margin: $spacer-2;
+    color: $primary-base;
+    font-weight: 600;
+    border: .5px solid $primary-base;
+  }
+
+  .btn--secundary {
+    @extend %btn--secondary;
+    cursor: pointer;
+      background-color:  $global-light;
+        &:hover {
+          background-color: $neutral-base;
+        }
+        &:focus {
+          background-color: $neutral-base;
+        }
+        &:active {
+          background-color: $neutral-base;
+        }
+        & .disabled {
+          background-color:  $global-light;
+          border: .5px solid $secondary-base125;
+          color: $secondary-base125;
+          cursor: none;
+        }
+  }
