@@ -1,67 +1,75 @@
-.wrapper-item {
-    display: flex;
+
+//Construimos una clase general para todos los botones con las
+//características comunes, luego lo extendemos dentro de cada botón
+
+//El componente solo puede tener clases del componente
+//ninguna para montar su layout como .wrapper-item
+
+.btn {
+  padding: $spacer-3 $spacer-6;
+  border-radius: rem(3); //Usar el mixin para rem.
+  //Alinea el contenido en los botones independientemente del padding.
+  //No hay márgenes dentro de un componente a no ser que se especifique.
+  //Para la demo se llaman a través de utilities classes.
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //hay 3 variables en _typograpy.scss, $fw-300, $fw-400, $fw-700.
+  font-weight: $fw-700;
+  cursor: pointer;
+  //reseta el borde default de los botones.
+  border: 0;
 }
-
-//button primary
-%btn--primary {
-  padding:$spacer-2*1.5 $spacer-5;   
-  border-radius: .3rem;
-  text-align: center;
-  margin: $spacer-2;
-  color: $global-light;
-  font-weight: 600;
-}
-
-
 
 //include btn class & btn bacgrounds colors
 .btn--primary {
-    @extend %btn--primary;
+    @extend .btn;
+    color: $global-light;
     background-color:  $primary-base;
-    cursor: pointer;
-      &:hover {
-        background-color: $primary-base50;
-      }
-      &:focus {
-        background-color: $primary-base75;
-      }
-      &:active {
-        background-color: $primary-base125;
-      }
-      & .disabled {
-        background-color: $neutral-base;
-        cursor: none;
-      }
+
+    &:hover {
+      background-color: $primary-base50;
+      text-decoration: none;
+    }
+    &:focus {
+      background-color: $primary-base75;
+    }
+    &:active {
+      background-color: $primary-base125;
+    }
+    //Hay que añadir el estado también
+    &:disabled,
+    &.disabled {
+      background-color: $neutral-base;
+      cursor: none;
+    }
   }
 
-//button secondary
-  %btn--secondary {
-    padding:$spacer-2*1.5 $spacer-5;  
-    border-radius: .3rem;
-    text-align: center;
-    margin: $spacer-2;
+  .btn--secondary {
+    @extend .btn;
+    background-color:  $global-light;
     color: $primary-base;
-    font-weight: 600;
-    border: .5px solid $primary-base;
-  }
+    //Faltaba el borde
+    border: rem(1) solid $primary-base;
 
-  .btn--secundary {
-    @extend %btn--secondary;
-    cursor: pointer;
+    //faltaban por añadir los colores de neutral base para construir los estados
+    //del botón secondary.
+    &:hover {
+      background-color: $neutral-base50;
+    }
+    &:focus {
+      background-color: $neutral-base50;
+    }
+    &:active {
+      background-color: $neutral-base75;
+    }
+    &:disabled,
+    &.disabled {
       background-color:  $global-light;
-        &:hover {
-          background-color: $neutral-base;
-        }
-        &:focus {
-          background-color: $neutral-base;
-        }
-        &:active {
-          background-color: $neutral-base;
-        }
-        & .disabled {
-          background-color:  $global-light;
-          border: .5px solid $secondary-base125;
-          color: $secondary-base125;
-          cursor: none;
-        }
+      //Los colores según la paleta dada son los Neutral
+      //secondary-base.. son azules.
+      border-color: $neutral-base; //Usar el mixin para rem
+      color: $neutral-base;
+      cursor: none;
+    }
   }
