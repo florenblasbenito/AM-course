@@ -9,6 +9,9 @@
 // Core modules
 @import "src/scss/base/index.scss";
 
+// Grid
+@import "src/scss/layout/index.scss";
+
 // Utilities always go last so that they can override components
 @import "src/scss/utilities/index.scss";
 
