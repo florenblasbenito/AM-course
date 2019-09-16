@@ -9,9 +9,33 @@
   </head>
   <body>
       <div class="wrapper">
-        <header class="header wrapper-item"><h1>BUTTONS</h1></header>
-        <section class="content wrapper-item">
-          <!-- Html buttos here -->
+        <header class="header"><h1 class="mb-sm-5">BUTTONS</h1></header>
+        <section class="content">
+          <h2 class="mb-sm-4">Primary buttons</h2>
+          <div class="d-flex flex-justify-between">
+
+            <!-- Un botón tiene que tener el tag <button> y además soportar
+            el link y los input -->
+           
+            <!-- default tag -->
+            <button class="btn--primary">BUTTON</button>
+            <!-- tags also supported -->
+            <a class="btn--primary" role="button">LINK</a>
+            <input class="btn--primary" type="button" value="Input">
+            <input class="btn--primary" type="submit" value="Submit">
+            <input class="btn--primary" disabled type="reset" value="Reset">
+          </div>
+
+          <h2 class="mb-sm-4 mt-sm-6">Secondary buttons</h2>
+          <div class="d-flex flex-justify-between">
+            <!-- default tag -->
+            <button class="btn--secondary">BUTTON</button>
+            <!-- tags also supported -->
+            <a class="btn--secondary" role="button">LINK</a>
+            <input class="btn--secondary" type="button" value="Input">
+            <input class="btn--secondary" type="submit" value="Submit">
+            <input class="btn--secondary" disabled type="reset" value="Reset">
+          </div>
         </section>
         <footer class="footer wrapper-item">FOOTER</footer>
       </div>
