@@ -17,7 +17,19 @@ $primary-base50: #FBC08F;
 
 
 $secondary-base: #2043F5;
+
+$secondary-base150: #0F217A;;
 $secondary-base125: #1732B7;
+$secondary-base75: #5872F8;
+$secondary-base50: #8FA1FA;
+
+
+$tertiary-base: #6D2077;
+
+$tertiary-base150: #360F3B;
+$tertiary-base125: #511759;
+$tertiary-base75: #925899;
+$tertiary-base50: #C8ABCC;
 
 //Neutral
 
@@ -33,14 +45,42 @@ $neutral-base50:  #F2F2F2;
 //Text
 $text-base: #333333;
 
+$text-base150: #191919;
+$text-base125: #262626;
+$text-base75:  rgba(51,51,51,0.75);
+$text-base50:  rgba(51,51,51,0.25);
+
+
+
+
 //Globals
 $global-light: #FFFFFF;
 
 // Support colors
 $support-success-base: #48B65F;
 
+$support-success-base150: #235A2F;;
+$support-success-base125: #358847;;
+$support-success-base75:  #76C987;;
+$support-success-base50:  #A3DAAF;
+
 $support-error-base: #D0021B;
+
+$support-error-base150: #67010D;;
+$support-error-base125: #9B0114;
+$support-error-base75:  #DC4254;
+$support-error-base50:  #E7808D;
 
 $support-warning-base: #F8C51C;
 
+$support-warning-base150: #F4A70D;
+$support-warning-base125: #F6B614;
+$support-warning-base75:  #FAD455;
+$support-warning-base50:  #FBE28D;
+
 $support-info-base: #6DA6DA;
+
+$support-info-base150: #2F526C;
+$support-info-base125: #477CA3;
+$support-info-base75:  #88BDE4;
+$support-info-base50:  #AFD2EC;
