@@ -18,7 +18,7 @@ $primary-base50: #FBC08F;
 
 $secondary-base: #2043F5;
 
-$secondary-base150: #0F217A;;
+$secondary-base150: #0F217A;
 $secondary-base125: #1732B7;
 $secondary-base75: #5872F8;
 $secondary-base50: #8FA1FA;
@@ -47,8 +47,8 @@ $text-base: #333333;
 
 $text-base150: #191919;
 $text-base125: #262626;
-$text-base75:  rgba(51,51,51,0.75);
-$text-base50:  rgba(51,51,51,0.25);
+$text-base75:  #666666;
+$text-base50:  #CCCCCC;
 
 
 
@@ -59,14 +59,14 @@ $global-light: #FFFFFF;
 // Support colors
 $support-success-base: #48B65F;
 
-$support-success-base150: #235A2F;;
-$support-success-base125: #358847;;
-$support-success-base75:  #76C987;;
+$support-success-base150: #235A2F;
+$support-success-base125: #358847;
+$support-success-base75:  #76C987;
 $support-success-base50:  #A3DAAF;
 
 $support-error-base: #D0021B;
 
-$support-error-base150: #67010D;;
+$support-error-base150: #67010D;
 $support-error-base125: #9B0114;
 $support-error-base75:  #DC4254;
 $support-error-base50:  #E7808D;
