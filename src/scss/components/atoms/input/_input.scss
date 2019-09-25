@@ -1,0 +1,58 @@
+
+
+.input {
+    padding: $spacer-2 $spacer-8;
+    border-radius: rem(3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+  }
+
+  .input--primary, .input--validation, .input--states {
+      @extend .input;
+      color: $text-base50;
+      border: 1px solid $neutral-base125;
+      text-align: left;
+      padding-left: $spacer-3;
+      border-radius: rem(5);
+      &.filled {
+          color: $text-base150;
+      }
+      &.disabled {
+        background-color: $neutral-base50;
+        color: $neutral-base125;
+        border-color: $neutral-base;
+      }
+      &.success {
+        color: $text-base150;
+        border-color: $support-success-base50;
+      }
+      &.error {
+        color: $support-error-base;
+        border-color: $support-error-base;
+        outline:0px;
+      }
+      &.unsafe--validation {
+        border-color: $primary-base125;
+        color: $primary-base125;
+        outline:0px;
+    }
+    &.secure--validation {
+        border-color: $support-warning-base150;
+        color: $support-warning-base150;
+        outline:0px;
+    }
+    &.hight--validation {
+        border-color: $support-success-base125;
+        color: $support-success-base125;
+        outline:0px;
+    }
+      
+    }
+    .input--primary:focus {
+        border-color: $primary-base125;
+        outline:0px;
+  }
+    
+  

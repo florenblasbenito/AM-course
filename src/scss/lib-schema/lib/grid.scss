@@ -7,6 +7,7 @@
   grid-template-areas:
   "header"
   "content"
+  "inputs"
   "footer";
 
   @include breakpoint(md){
@@ -14,6 +15,7 @@
     grid-template-areas:
     "header  header  header"
     "content content content"
+    "inputs inputs inputs"
     "footer  footer  footer";
   }
   //Defining grid areas
@@ -22,6 +24,9 @@
   }
   .header {
     grid-area: header;
+  }
+  .inputs {
+    grid-area: inputs;
   }
   .footer {
     grid-area: footer;

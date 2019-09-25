@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>INPUTS</title>
+    <!--build:css css/index.min.css -->
+    <link rel="stylesheet" href="../../css/index.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="mb-sm-5">INPUTS</h1>
+        </header>
+        <section class="content">
+            <form action="" method="post">
+
+                <h2 class="mb-sm-4">Inputs / Primary</h2>
+                
+                <div class="d-flex flex-justify-between">
+                    <input class="input--primary" type="text" placeholder="Calle/Avenida/Paseo" name="enabled"
+                        required="">
+                    <input class="input--primary" type="text" name="focus" required="">
+                    <input class="input--primary filled" type="text" name="filled" required="">
+                    <input class="input--primary disabled" type="text" placeholder="Calle/Avenida/Paseo" name="disabled"
+                        required="">
+                </div>
+
+                <h2 class="mb-sm-4 mt-sm-6">Inputs / Validación</h2>
+
+                <div class="d-flex flex-justify-between">
+                    <input type="text" class="input--validation success" name="success" required="">
+                    <input type="text" class="input--validation error" name="error" required="">
+                </div>
+
+                <h2 class="mb-sm-4 mt-sm-6">Inputs / Estados</h2>
+
+                <div class="d-flex flex-justify-between">
+                    <input type="text" class="input--states credit--card" name="creditcard" required="">
+                    <input type="password" class="input--states unsafe--validation" name="unsafevalidation" required="">
+                    <input type="password" class="input--states secure--validation" name="securevalidation" required="">
+                    <input type="password" class="input--states hight--validation" name="hightvalidation" required="">
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
